@@ -1,10 +1,10 @@
-Name:           fedora-bookmarks
+Name:           iprediaos-bookmarks
 Version:        15
 Release:        0.2
-Summary:        Fedora bookmarks
+Summary:        IprediaOS bookmarks
 Group:          Applications/Internet
 License:        GFDL
-URL:            http://fedoraproject.org/
+URL:            http://ipredia.org/
 # I had to strip the embedded icons out of the bookmarks file, because they are not 
 # distributable under the GFDL. See https://bugzilla.redhat.com/show_bug.cgi?id=433471
 Source0:        default-bookmarks.html
@@ -14,7 +14,7 @@ Provides:       system-bookmarks
 
 
 %description
-This package contains the default bookmarks for Fedora.
+This package contains the default bookmarks for IprediaOS.
 
 %prep
 # We are nihilists, Lebowski.  We believe in nassing.
@@ -38,6 +38,9 @@ install -p -m 644 %{SOURCE0} $RPM_BUILD_ROOT%{_datadir}/bookmarks
 %{_datadir}/bookmarks/default-bookmarks.html
 
 %changelog
+* Wed May 9 2012 Mattias Ohlsson <mattias.ohlsson@inprose.com>
+- Rebuilt for IprediaOS
+
 * Fri Jan 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 15-0.2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
 
