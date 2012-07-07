@@ -1,6 +1,6 @@
 Name:           iprediaos-bookmarks
 Version:        15
-Release:        0.2
+Release:        0.3
 Summary:        IprediaOS bookmarks
 Group:          Applications/Internet
 License:        GFDL
@@ -38,6 +38,9 @@ install -p -m 644 %{SOURCE0} $RPM_BUILD_ROOT%{_datadir}/bookmarks
 %{_datadir}/bookmarks/default-bookmarks.html
 
 %changelog
+* Sat Jul 7 2012 Mattias Ohlsson <mattias.ohlsson@inprose.com> - 15-0.3
+- Update bookmarks
+
 * Wed May 9 2012 Mattias Ohlsson <mattias.ohlsson@inprose.com>
 - Rebuilt for IprediaOS
 
